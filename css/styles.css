@@ -8,11 +8,60 @@
     box-sizing: border-box;
 }
 
+/* Color theme */
+.dark-background {
+    background-color: #1F2937;
+    color: #F9FAF8;
+}
+
+
+.light-background {
+    background-color: #F9FAF8;
+    color: #1F2937;
+}
+
+.alt-light-background {
+    background-color: #E5E7EB;
+    color: #1F2937;
+}
+
+.blue-background {
+    background-color: #3882F6;
+    color: #F9FAF8;
+}
+
+.links a {
+    color: #E5E7EB;
+}
+
+.blue-border {
+    border-color: #3882F6;
+    border-style: solid;
+}
+
+.light-border {
+    border-color: #F9FAF8;
+    border-style: solid;
+}
+
+.bt-blue {
+    background-color: #3882F6;
+    color: #F9FAF8;
+}
+/* Color theme */
+
+.thin-border {
+    border-width: 1px;
+}
+
+.thick-border {
+    border-width: 4px;
+}
+
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #1F2937;
 }
 
 .bt-signup {
@@ -20,27 +69,25 @@ body {
     border-radius: 8px;
     font-size: 18px;
     height: min-content;
+    text-wrap: nowrap;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
-    background-color: #1F2937;
     padding: 2% 15% 0%;
 }
 
 .header .logo {
-    color: #F9FAF8;
     font-size: 24px;
     font-weight: 600;
 }
 
 .header a {
-    color: #E5E7EB;
     text-decoration: none;
+    text-wrap: nowrap;
     margin-left: 24px;
     font-size: 18px;
-    text-wrap: nowrap;
 }
 
 .content {
@@ -49,7 +96,6 @@ body {
 }
 
 .sec-1 {
-    background-color: #1F2937;
     padding: 8% 15% 8%;
     display: flex;
     justify-content: space-between;
@@ -62,13 +108,11 @@ body {
     aspect-ratio: 2/1;
     object-fit: cover;
     object-position: center;
-    border: 1px solid #3882F6;
 }
 
 .sec-1-text {
     align-self: flex-start;
     display: flex;
-    color: #F9FAF8;
     padding-right: 24px;
     flex-direction: column;
     justify-content: flex-start;
@@ -83,14 +127,7 @@ body {
     font-weight: 900;
 }
 
-
-.sec-1 .bt-signup {
-    background-color: #3882F6;
-    color: #F9FAF8;
-}
-
 .sec-2 {
-    background-color: #F9FAF8;
     padding: 4% 15% 4%;
     display: flex;
     flex-direction: column;
@@ -101,7 +138,6 @@ body {
 .sec-2 h3 {
     font-size: 36px;
     font-weight: 800;
-    color: #1F2937;
 }
 
 .sec-2-cards {
@@ -131,12 +167,10 @@ body {
     height: 180px;
     object-fit: cover;
     border-radius: 8px;
-    border: 4px solid #3882F6;
 }
 
 .sec-3 {
     padding: 8% 15% 8%;
-    background-color: #E5E7EB;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -146,7 +180,6 @@ body {
     font-size: 36px;
     font-weight: 300;
     font-style: italic;
-    color: #1F2937;
 }
 
 .sec-3 .author {
@@ -156,12 +189,10 @@ body {
 }
 
 .sec-4 {
-    background-color: #F9FAF8;
     padding: 8% 15% 8%;
 }
 
 .sec-4-card {
-    background-color: #3882F6;
     padding: 5% 10%;
     border-radius: 8px;
     min-width: 300px;
@@ -173,7 +204,6 @@ body {
 }
 
 .sec-4-text {
-    color: #F9FAF8;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -184,22 +214,10 @@ body {
     font-weight: 700;
 }
 
-.sec-4 .bt-signup {
-    background-color: #3882F6;
-    border: 1px solid #F9FAF8;
-    color: #F9FAF8;
-    padding: 4px 32px;
-    text-wrap: nowrap;
-}
-
-
 .footer {
-    /* padding: 24px 256px 24px; */
     padding: 2% 15% 2%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #1F2937;
-    color: #F9FAF8;
 }
