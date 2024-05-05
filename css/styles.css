@@ -3,8 +3,9 @@
 * {
     padding: 0px;
     margin: 0px;
-    font-family: Roboto, 'sans-serif';
+    font-family: 'Roboto', 'sans-serif';
     border: none;
+    box-sizing: border-box;
 }
 
 body {
@@ -18,13 +19,14 @@ body {
     padding: 8px 32px;
     border-radius: 8px;
     font-size: 18px;
+    height: min-content;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     background-color: #1F2937;
-    padding: 24px 256px 0px;
+    padding: 2% 15% 0%;
 }
 
 .header .logo {
@@ -38,32 +40,33 @@ body {
     text-decoration: none;
     margin-left: 24px;
     font-size: 18px;
+    text-wrap: nowrap;
 }
 
 .content {
     display: flex;
     flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
-    flex: 1;
 }
 
 .sec-1 {
     background-color: #1F2937;
-    padding: 120px 256px 120px;
+    padding: 8% 15% 8%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .sec-1 img {
-    width: 840px;
-    height: 240px;
+    width: 30vw;
+    min-width: 240px;
+    aspect-ratio: 2/1;
     object-fit: cover;
     object-position: center;
-    border: 1px solid #F9FAF8;
+    border: 1px solid #3882F6;
 }
 
 .sec-1-text {
+    align-self: flex-start;
     display: flex;
     color: #F9FAF8;
     padding-right: 24px;
@@ -71,6 +74,8 @@ body {
     justify-content: flex-start;
     align-items: flex-start;
     gap: 16px;
+    max-width: 40vw;
+    min-width: 180px;
 }
 
 .sec-1-text h2 {
@@ -86,10 +91,11 @@ body {
 
 .sec-2 {
     background-color: #F9FAF8;
-    padding: 60px 256px 60px;
+    padding: 4% 15% 4%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 36px;
 }
 
 .sec-2 h3 {
@@ -105,7 +111,7 @@ body {
     gap: 52px;
     align-items: center;
     justify-content: center;
-    padding: 36px 0px;
+
 
 }
 
@@ -129,7 +135,7 @@ body {
 }
 
 .sec-3 {
-    padding: 120px 256px 120px;
+    padding: 8% 15% 8%;
     background-color: #E5E7EB;
     display: flex;
     flex-direction: column;
@@ -151,16 +157,20 @@ body {
 
 .sec-4 {
     background-color: #F9FAF8;
-    padding: 120px 256px 120px;}
+    padding: 8% 15% 8%;
+}
 
 .sec-4-card {
     background-color: #3882F6;
-    padding: 52px 100px;
+    padding: 5% 10%;
     border-radius: 8px;
+    min-width: 300px;
     display: flex;
     justify-content: space-between;
-}
+    align-items: center;
+    gap: 8px;
 
+}
 
 .sec-4-text {
     color: #F9FAF8;
@@ -176,18 +186,20 @@ body {
 
 .sec-4 .bt-signup {
     background-color: #3882F6;
-    border: 2px solid #F9FAF8;
+    border: 1px solid #F9FAF8;
     color: #F9FAF8;
     padding: 4px 32px;
-    /* flex: 0;     */
     text-wrap: nowrap;
 }
 
 
 .footer {
-    padding: 24px 256px 24px;
+    /* padding: 24px 256px 24px; */
+    padding: 2% 15% 2%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
     background-color: #1F2937;
     color: #F9FAF8;
 }
